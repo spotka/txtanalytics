@@ -1,4 +1,4 @@
-##Text analytics code
+## Text analytics code
 
 [tfidf_createvecs.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/tfidf_createvecs.ipynb): Given a document collection (e.g. [txts.zip](https://github.com/thomouvic/txtanalytics/blob/main/txts.zip)), it creates normalized TFIDF vectors. There will be a vector for each document in the collection. The vectors will be stored all together in a pandas dataframe, then to a csv file (e.g. [docvecs.csv](https://github.com/thomouvic/txtanalytics/blob/main/docvecs.csv)). The structure of the dataframe (and csv file) is as follows: 
 
@@ -22,3 +22,11 @@ scoremult	docid	docname
 0.183604	12	txts/Arbuckle-et-al-2020-Introduction-Open-Sch...
 0.150295	99	txts/Siemens-2016-Faster-Alone-Further-Togethe...
 </pre>
+
+[CreateDFforHSS.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/CreateDFforHSS.ipynb): Given a text collection (e.g. [txts.zip](https://github.com/thomouvic/txtanalytics/blob/main/txts.zip)), it does a word frequency analysis, then it builds word maps based on simple frequency and TFIDF scores. 
+
+[txts.zip](https://github.com/thomouvic/txtanalytics/blob/main/txts.zip): Text collection from HSS Commons, 130 text files extracted from PDFs. 
+
+[docnames.csv](https://github.com/thomouvic/txtanalytics/blob/main/docnames.csv): CSV file containing docname, docid pairs. Created by [tfidf_createvecs.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/tfidf_createvecs.ipynb). 
+
+[docvecs.csv](https://github.com/thomouvic/txtanalytics/blob/main/docvecs.csv): CSV file containing docvecs. See above for its structure. Created by [tfidf_createvecs.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/tfidf_createvecs.ipynb).
