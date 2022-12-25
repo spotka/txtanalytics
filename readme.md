@@ -1,5 +1,13 @@
 ## Text analytics code
 
+### Gaining Early Insights from a Text Collection
+
+[CreateDFforHSS.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/CreateDFforHSS.ipynb): Given a text collection (e.g. [txts.zip](https://github.com/thomouvic/txtanalytics/blob/main/txts.zip)), it does a word frequency analysis, then it builds word maps based on frequency as well as TFIDF scores. 
+
+---
+
+### Recommender System
+
 [tfidf_createvecs.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/tfidf_createvecs.ipynb): Given a document collection (e.g. [txts.zip](https://github.com/thomouvic/txtanalytics/blob/main/txts.zip)), it creates normalized TFIDF vectors. There will be a vector for each document in the collection. The vectors will be stored all together in a pandas dataframe, then to a csv file (e.g. [docvecs.csv](https://github.com/thomouvic/txtanalytics/blob/main/docvecs.csv)). The notebook also creates a csv file of docnames: [docnames.csv](https://github.com/thomouvic/txtanalytics/blob/main/docnames.csv).
 
 [tfidf_cos_sim.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/tfidf_cos_sim.ipynb): Given a document name, it finds the top similar documents to the given one. It uses cosine similarity on TFIDF vectors. For normalized vectors cosine similarity amounts to dot-product. It outputs the top similar documents in terms of their similarity score, docid, and docname. E.g. if we input docname 'txts/Arbuckle-Christie-Siemens_IntroductionSRC7.2_11-15-16.txt', it outputs
@@ -36,10 +44,7 @@ docid,termid,score,term
 </pre>
 
 ---
-
-[CreateDFforHSS.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/CreateDFforHSS.ipynb): Given a text collection (e.g. [txts.zip](https://github.com/thomouvic/txtanalytics/blob/main/txts.zip)), it does a word frequency analysis, then it builds word maps based on simple frequency and TFIDF scores. 
-
----
+### Network Analysis of a Text Collection
 
 [doc_sim_graph.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/doc_sim_graph.ipynb): Given a text collection, it creates a graph of documents based on document similarities. 
 
