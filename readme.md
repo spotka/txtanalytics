@@ -48,4 +48,6 @@ docid,termid,score,term
 
 [doc_sim_graph.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/doc_sim_graph.ipynb): Given a text collection, it creates a graph of documents based on document similarities. 
 
+[dhwikinet.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/dhwikinet.ipynb): Builds a network of Wikipedia pages starting from a given page (e.g. Digital Humanities) and collecting its ego-net. It saves the graph to [dh_wikipedia.gexf](https://github.com/thomouvic/txtanalytics/blob/main/dh_wikipedia.gexf). 
+
 ---
