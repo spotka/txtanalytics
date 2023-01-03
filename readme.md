@@ -48,6 +48,24 @@ docid,termid,score,term
 
 [doc_sim_graph.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/doc_sim_graph.ipynb): Given a text collection, it creates a graph of documents based on document similarities. 
 
+The link to txt data is: https://drive.google.com/drive/folders/1WwsqDeP-L4oT_1Tex2bRcHSBJMhs5LMv?usp=sharing
+Create a directory 'shera' in your google drive and put there the zip files. 
+
+Please take a look at: https://github.com/thomouvic/txtanalytics/blob/main/doc_sim_graph.ipynb
+It creates the graph of similarities starting from a zip file of documents, e.g. 2022txt.zip
+It thresholds the similarities to 0.18 so that the graph is not very dense, about 10 edges on average per node. 
+The graph is stored as 2022.gexf. Download it locally from colab so that you can use it for Gephi.
+
+In Gephi, compute modularity communities and color them. Then go to Data Laboratory and save it as csv and upload to colab. Each node will be labeled with a community value, e.g. 0, 1, 2, ... We extract there the nodes for a community, e.g. 0, and based on their text, build the wordmaps using the Blueprints technique. We can open some of the documents and try to make sense of the produced community. See e.g. the last paragraph in the notebook. 
+
+We can bypass Gephi for community detection and use Networkx. Then the community identifiers are stored as node attribute. A new Gephi graph is created 2022mod.gexf (for visualization) which contains modularity community ids for each node. In Gephi use this attribute to color nodes rather than perform modularity computation in Gephi. The benefit is that Networkx uses edge weights, while Gephi does not. 
+
+We can repeat this for community 1, 2, ... Also, we can repeat for different years, i.e. different zip files. 
+
+We can also compute network measurements and other techniques.
+
+--
+
 [dhwikinet.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/dhwikinet.ipynb): Builds a network of Wikipedia pages starting from a given page (e.g. Digital Humanities) and collecting its ego-net. It saves the graph to [dh_wikipedia.gexf](https://github.com/thomouvic/txtanalytics/blob/main/dh_wikipedia.gexf). 
 
 ---
