@@ -48,7 +48,7 @@ docid,termid,score,term
 
 [doc_sim_graph.ipynb](https://github.com/thomouvic/txtanalytics/blob/main/doc_sim_graph.ipynb): Given a text collection, it creates a graph of documents based on document similarities. 
 
-The link to txt data is: https://drive.google.com/drive/folders/1WwsqDeP-L4oT_1Tex2bRcHSBJMhs5LMv?usp=sharing
+The link to txt data is: https://drive.google.com/drive/folders/...
 Create a directory 'shera' in your google drive and put there the zip files. 
 
 Please take a look at: https://github.com/thomouvic/txtanalytics/blob/main/doc_sim_graph.ipynb
